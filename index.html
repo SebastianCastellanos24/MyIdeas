@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My ideas</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icon.svg">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <div id="content" class="min-h-screen hero">
+        <div class="max-w-5xl m-auto p-10 md:p-12">
+            <h1 class="text-center text-4xl text-white mb-8 font-bold">What are you thinking today?</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="text-3xl text-white mb-2 font-bold" for="tweet">Idea:</label>
+                    <form  id="form">
+                            <label for="tweet"></label>
+                            <textarea rows="6" class="w-full p-4 text-green-500 font-medium rounded text-xl" id="tweet"></textarea>
+                            <input class="w-full py-2 text-green-500 font-bold rounded mt-1 text-xl hover:bg-green-500 hover:text-white" type="submit" value="Add Idea">
+                    </form>
+                </div>
+                <div>
+                    <h2 class="text-center text-3xl text-white font-bold">My ideas</h2>
+                    <div id="tweet-list"></div>
+                </div>
+            </div>
+        </div>
+    </div> <!--#contenido-->
+
+    <script src="js/app.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+</html>
